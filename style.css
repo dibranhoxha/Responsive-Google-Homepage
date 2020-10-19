@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  color: #000000de;
+  font-size: 14px;
+}
+
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-right: 8px;
+}
+
+#nav .nav-link {
+  padding-right: 7px;
+  text-decoration: none;
+  color: #000000de;
+  font-size: 13px;
+}
+
+#nav .gmail {
+  margin-right: 6px;
+}
+
+#nav .all {
+  display: none;
+}
+
+#nav .images {
+  margin-right: 14px;
+}
+
+#nav .left-side {
+  margin: auto 0;
+}
+
+#nav svg {
+  display: none;
+}
+
+#nav .item:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+#nav #bars {
+  opacity: 0.55;
+  margin-right: 10px;
+}
+
+#nav #bars img {
+  position: relative;
+  bottom: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+#nav #bars:hover {
+  opacity: 0.85;
+}
+
+#nav #avatar-img {
+  border-radius: 50%;
+  width: 32px;
+  margin-right: 14px;
+  margin-top: 5px;
+}
+
+#middle {
+  margin-top: 105px;
+  text-align: center;
+}
+
+#search-form {
+  margin-top: 27px;
+}
+
+#search-bar-container {
+  width: 580px;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 25px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+#search-bar-container:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+#search-bar {
+  height: 35px;
+  outline: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 490px;
+  font-size: 18px;
+  border: none;
+  float: left;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#search-icon {
+  margin-top: 10px;
+  padding-left: 14px;
+  float: left;
+}
+
+#mic-icon {
+  margin-top: 12px;
+  float: left;
+}
+
+#search-img {
+  width: 20px;
+}
+
+#mic-img {
+  width: 13px;
+}
+
+.button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 12px;
+  color: #5f6368;
+  height: 36px;
+  min-width: 54px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+#submit-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+#submit-buttons button:first-child {
+  margin-right: 10px;
+}
+
+#lang-div {
+  margin-top: 25px;
+}
+
+#lang-div a {
+  text-decoration: none;
+  color: #1a0dab;
+}
+
+#lang-div a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+#footer ul {
+  display: flex;
+  margin: auto 0;
+  padding: 0 10px;
+}
+
+#footer ul li {
+  list-style-type: none;
+  padding-right: 14px;
+  padding-left: 17px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+#footer .unknown {
+  display: none;
+}
+
+#none li {
+  list-style-type: none;
+}
+
+#auto-complete {
+  margin: -20px auto 0 auto;
+  width: 581px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
+  border: 0;
+  border-radius: 0 0 24px 24px;
+  z-index: -1;
+  padding-top: 30px;
+}
+
+#auto-complete ul {
+  overflow: hidden;
+  border-top: 1px solid rgba(223, 225, 229, 0);
+}
+
+#auto-complete li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 0;
+  margin-top: 7px;
+}
+
+#animated-button {
+  overflow: hidden;
+}
+
+#animated-button li {
+  list-style-type: none;
+}
+
+#animated-button ul {
+  padding: 0;
+  margin-top: 4px;
+}
+
+/* Media Queries */
+
+/* -- iPhone X -- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  body {
+    font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    padding-right: 5px;
+  }
+
+  #nav .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-right: 8px;
+  }
+
+  #nav .left-side {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+  }
+
+  #nav .left-side .all {
+    display: block;
+    margin-top: 6px;
+    color: #757575;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+    text-align: center;
+    padding: 0 6px;
+    padding-bottom: 15px;
+  }
+
+  #nav .left-side svg {
+    display: block;
+    margin-left: 15px;
+  }
+
+  #nav .left-side a {
+    margin-left: 20px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #nav .gmail {
+    display: none;
+  }
+
+  #nav .images {
+    margin-right: 20px;
+    margin-top: 6px;
+    color: #757575;
+  }
+
+  #nav #bars img {
+    width: 16px;
+    height: 16px;
+  }
+
+  #nav #avatar-img {
+    border-radius: 50%;
+    width: 32px;
+    margin-right: 0;
+  }
+
+  #middle #logo #google-logo {
+    width: 160px;
+  }
+
+  #middle {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  #search-form {
+    margin-top: 24px;
+  }
+
+  #search-bar-container {
+    width: 355px;
+    height: 35px;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  #search-bar {
+    height: 25px;
+    outline: 0;
+    padding: 0;
+    margin-top: 6px;
+    width: 290px;
+    font-size: 18px;
+    border: none;
+    float: left;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  #search-icon {
+    margin-top: 4px;
+    padding-left: 6px;
+    float: left;
+  }
+
+  #search-img {
+    width: 25px;
+  }
+
+  #mic-icon {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  #lang-div {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  #lang-div a{
+    padding-left: 10px;
+  }
+
+  #footer {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone X ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
