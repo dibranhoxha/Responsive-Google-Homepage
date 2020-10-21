@@ -500,13 +500,84 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background: #fff;
     z-index: 989;
     border-radius: 0;
     overflow: auto;
   }
+
+  #auto-complete-container {
+    display: none;
+  }
+
+  .top-container  {
+    margin-top: 5px;
+    display: flex;
+    height: 45px;
+    align-items: center;
+  }
+
+  .input-container {
+    flex: 1;
+    display: flex;
+    padding: 7px 0 6px;
+  }
+
+  .iphone-search-input {
+    font-size: 18px;
+    margin-left: 10px;
+    padding-left: 3px;
+    padding-right: 2px;
+    overflow-y: hidden;
+    outline: none;
+    border: none;
+    width: 90%;
+  }
+
+  .backward-container {
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #3b78e6;
+  }
+
+  .backward-icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+  }
+
+  .bottom-container {
+    border: none;
+    margin: 0 10px;
+    border-top: 1px solid #dadce0;
+  }
+
+  .history-list {
+    padding: 10px 3px 11px 5px;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .history-list-item {
+    padding: 10px 3px 11px 5px;
+    width: 100%;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+  }
+
+  .list-icon {
+    height: 24px;
+    width: 24px;
+  }
+
 
   .button {
     display: none;
