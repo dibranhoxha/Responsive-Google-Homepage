@@ -1,109 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="https://i.stack.imgur.com/22WR2.png"
-      type="image/png"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Google</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://i.stack.imgur.com/22WR2.png" type="image/png" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Google</title>
+</head>
+<body>
+  <div id="nav">
+    <div class="left-side">
+      <a href="" class="nav-link item gmail">Gmail</a>
+      <input type="checkbox" class="toggler">
+      <div id="overlay"></div>
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <img class="menu-logo" src="./images/google.png" alt="">
+        <div class="menu-container">
+          <a href="#"><img class="description-img" src="https://www.gstatic.com/navigationdrawer/home_icon.svg"
+              alt="">Home</a>
+          <a href="#"><img class="description-img"
+              src="https://www.gstatic.com/navigationdrawer/search_activity_icon.svg" alt="">Search activity</a>
+          <a href="#"><img class="description-img" src="https://www.gstatic.com/navigationdrawer/save_icon.svg"
+              alt="">Collections</a>
+          <hr class="menu-hr">
+          <a href="#"><img class="description-img" src="https://www.gstatic.com/navigationdrawer/settings_icon.svg"
+              alt="">Settings</a>
+          <a href="#"><img class="description-img"
+              src="https://www.gstatic.com/navigationdrawer/privacy_advisor_icon.svg" alt="">Your data in Search</a>
+          <a href="#"><img class="description-img" src="https://www.gstatic.com/navigationdrawer/explicit_icon.svg"
+              alt="">Hide explicit results: off</a>
+          <a href="#"><img class="description-img"
+              src="https://www.gstatic.com/navigationdrawer/how_search_works_icon.svg" alt="">How Search works</a>
+          <a href="#"><img class="description-img" src="https://www.gstatic.com/navigationdrawer/help_icon.svg"
+              alt="">Help</a>
+          <a href="#"><img class="description-img" src="https://www.gstatic.com/navigationdrawer/feedback_icon.svg"
+              alt="">Send feedback</a>
+        </div>
+      </div>
 
-  <body>
-    <div id="nav">
-      <div class="left-side">
-        <a href="" class="nav-link item gmail">Gmail</a>
-        <svg
-          style="fill: #757575; width: 24px; height: 24px"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-        </svg>
-        <a href="#" class="nav-link item all">all</a>
-        <a href="#" class="nav-link item images">Images</a>
-      </div>
-      <div>
-        <a href="" id="bars" class="nav-link item"
-          ><img src="./images/bars.png" alt="bars"
-        /></a>
-        <a href="" class="nav-link"
-          ><img
-            id="avatar-img"
-            src="https://lh3.googleusercontent.com/ogw/ADGmqu_120t9CWb2xYgrQON8mzluhQcommKAsCqXGPm2=s32-c-mo"
-            alt=""
-            id="avatar-img"
-        /></a>
-      </div>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+      </svg>
+      <a href="#" class="nav-link item all">all</a>
+      <a href="#" class="nav-link item images">Images</a>
     </div>
-    <div id="middle">
-      <div id="logo">
-        <img src="./images/google.png" alt="google image" id="google-logo" />
-      </div>
-      <div>
-        <form autocomplete="off" action="" id="search-form">
-          <div id="search-bar-container">
-            <div id="search-icon">
-              <img
-                class="icons"
-                id="search-img"
-                src="https://www.trimandir.org/images/search-icon.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <input type="text" id="search-bar" />
-            </div>
-            <div id="mic-icon">
-              <img class="icons" id="mic-img" src="./images/mic.png" alt="" />
-            </div>
+    <div>
+      <a href="" id="bars" class="nav-link item"><img src="./images/bars.png" alt="bars" /></a>
+      <a href="" class="nav-link"><img id="avatar-img"
+          src="https://lh3.googleusercontent.com/ogw/ADGmqu_120t9CWb2xYgrQON8mzluhQcommKAsCqXGPm2=s32-c-mo" alt=""
+          id="avatar-img" /></a>
+    </div>
+  </div>
+  <div id="middle">
+    <div id="logo">
+      <img src="./images/google.png" alt="google image" id="google-logo" />
+    </div>
+    <div>
+      <form autocomplete="off" action="" id="search-form">
+        <div id="search-bar-container">
+          <div id="search-icon">
+            <img class="icons" id="search-img" src="https://www.trimandir.org/images/search-icon.png" alt="" />
           </div>
-          <div id="auto-complete-container">
-            <ul id="auto-complete-results"></ul>
+          <div>
+            <input type="text" id="search-bar" />
+          </div>
+          <div id="mic-icon">
+            <img class="icons" id="mic-img" src="./images/mic.png" alt="" />
+          </div>
+        </div>
+        <div id="auto-complete-container">
+          <ul id="auto-complete-results"></ul>
+        </div>
+          <div id="submit-buttons">
+            <button class="button">Google Search</button>
+            <button class="button" id="animated-button">
+              <ul>
+                <li>I'm Feeling Lucky</li>
+                <li>I'm Feeling Stellar</li>
+                <li>I'm Feeling Artistic</li>
+                <li>I'm Feeling Wonderful</li>
+                <li>I'm Feeling Curious</li>
+                <li>I'm Feeling Hungry</li>
+                <li>I'm Feeling Doodley</li>
+                <li>I'm Feeling Generous</li>
+                <li>I'm Feeling Trendy</li>
+                <li>I'm Feeling Puzzled</li>
+                <li>I'm Feeling Playful</li>
+              </ul>
+            </button>
+          </div>
+          <div id="lang-div">
+            Google offered in:
+            <a href="">Shqip</a>
+          </div>
 
-            <div id="submit-buttons">
-              <button class="button">Google Search</button>
-              <button class="button" id="animated-button">
-                <ul>
-                  <li>I'm Feeling Lucky</li>
-                  <li>I'm Feeling Stellar</li>
-                  <li>I'm Feeling Artistic</li>
-                  <li>I'm Feeling Wonderful</li>
-                  <li>I'm Feeling Curious</li>
-                  <li>I'm Feeling Hungry</li>
-                  <li>I'm Feeling Doodley</li>
-                  <li>I'm Feeling Generous</li>
-                  <li>I'm Feeling Trendy</li>
-                  <li>I'm Feeling Puzzled</li>
-                  <li>I'm Feeling Playful</li>
-                </ul>
-              </button>
-            </div>
-            <div id="lang-div">
-              Google offered in:
-              <a href="">Shqip</a>
-            </div>
-          </div>
-        </form>
-      </div>
+      </form>
     </div>
-    <footer id="footer">
-      <ul class="footer-list">
-        <li><a href="">Advertising</a></li>
-        <li><a href="">Business</a></li>
-        <li><a href="">About</a></li>
-        <li class="hsw"><a href="">How Search works</a></li>
-      </ul>
-      <ul class="footer-list">
-        <li><a href="">Privacy</a></li>
-        <li><a href="">Terms</a></li>
-        <li><a href="">Settings</a></li>
-      </ul>
-    </footer>
-  </body>
-  <script src="./script.js"></script>
+  </div>
+  <footer id="footer">
+    <ul class="end-list">
+      <li><a href="">Advertising</a></li>
+      <li><a href="">Business</a></li>
+      <li><a href="">About</a></li>
+      <li class="hsw"><a href="">How Search works</a></li>
+    </ul>
+    <ul class="top-list">
+      <li><a href="">Privacy</a></li>
+      <li><a href="">Terms</a></li>
+      <li><a href="">Settings</a></li>
+    </ul>
+    <ul class="unknown-list">
+        <li class="unknown">
+          <span class="dot"></span> <span class="bold-text">Unknown</span><span class="dash">-</span><a>Use
+          precise location</a>
+        </li>
+    </ul>
+  </footer>
+</body>
+<script src="./script.js"></script>
+
 </html>
