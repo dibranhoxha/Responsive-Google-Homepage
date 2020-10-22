@@ -6,11 +6,15 @@ let animatedList = document.querySelector("#animated-button ul");
 let animatedListItems = document.querySelectorAll("#animated-button ul li");
 
 searchBar.addEventListener("click", () => {
-    autoCompleteElement.id = "iphone-auto-complete";
+    autoCompleteElement.id = "device-auto-complete";
+    searchBarContainer.id =  "auto-complete-search-bar";
+    document.getElementById("under-auto-complete").style.display = "none"
 })
 
 document.querySelector("#submit-buttons").addEventListener("click", () => {
-    autoCompleteElement.id = "none";
+    // autoCompleteElement.id = "";
+    // searchBarContainer.id =  "auto-complete-container";
+    // document.getElementById("under-auto-complete").style.display = "block"
 })
 
 let pxArr = [49, 74, 101, 127, 154, 180, 207, 233, 255]

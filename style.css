@@ -133,6 +133,99 @@ body {
   width: 13px;
 }
 
+#auto-complete-container {
+  display: none;
+}
+
+#auto-complete-search-bar {
+    border-radius: 25px 25px 0 0;
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    width: 580px;
+    height: 44px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#device-auto-complete {
+  box-shadow: 0 4px 6px rgba(32,33,36,.28);
+  position: relative;
+  width: 580px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  z-index: 999;
+  border-radius: 0 0 25px 25px;
+  overflow: auto; 
+}
+
+.auto-complete-container {
+  display: none;
+}
+
+.top-container  {
+  display: none;
+}
+
+.bottom-container {
+  background: #fff;
+  z-index: 999;
+  border: none;
+  overflow-x: hidden;
+}
+
+.history-list {
+  margin: 0 18px;
+  border-top: 1px solid #dfe1e5;
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-list-item {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0 2px 0;
+  min-width: 0;
+  font-size: 16px;
+  color: #52188c;
+}
+
+b {
+  font-weight: 100;
+}
+
+.list-icon {
+  display: flex;
+  justify-content: flex-start;
+  width: 30px;
+}
+
+.far {
+  color: #9e9e9e;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.remove {
+  display: none;
+}
+
+.remove-text {
+    display: block;
+    position: absolute;
+    right: 55px;
+    font-family: arial, sans-serif;
+    color: #80868b;
+    line-height: 25px;
+    padding: 0 5px;
+    width: 20px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 14px;
+}
+
 .button {
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
@@ -250,6 +343,20 @@ body {
 }
 
 #animated-button ul {
+  padding: 0;
+  margin-top: 4px;
+}
+
+#animated-button-2 {
+  overflow: hidden;
+}
+
+#animated-button-2 li {
+  list-style-type: none;
+  width: auto;
+}
+
+#animated-button-2 ul {
   padding: 0;
   margin-top: 4px;
 }
@@ -450,7 +557,7 @@ body {
   #middle {
     margin-top: 65px;
     text-align: center;
-    height: 812px;
+    height: auto;
   }
 
   #middle #logo #google-logo {
@@ -496,7 +603,7 @@ body {
     display: none;
   }
 
-  #iphone-auto-complete {
+  #device-auto-complete {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -508,7 +615,11 @@ body {
     overflow: auto;
   }
 
-  #auto-complete-container {
+  #auto-complete-search-bar {
+    display: none;
+  }
+
+  .auto-complete-container {
     display: none;
   }
 
@@ -552,12 +663,14 @@ body {
   }
 
   .bottom-container {
+    width: auto;
     border: none;
     margin: 0 10px;
     border-top: 1px solid #dadce0;
   }
 
   .history-list {
+    border-top: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -572,6 +685,11 @@ body {
     padding: 10px 3px 15px 5px;
     min-width: 0;
     font-size: 16px;
+    color: black;
+  }
+
+  b {
+    font-weight: 600;
   }
 
   .list-icon {
@@ -589,6 +707,7 @@ body {
   }
 
   .remove {
+    display: block;
     position: fixed;
     right: 15px;
     font-family: arial, sans-serif;
@@ -599,6 +718,10 @@ body {
     width: 20px;
     cursor: pointer;
     align-self: center;
+  }
+
+  .remove-text {
+    display: none;
   }
 
   .button {
