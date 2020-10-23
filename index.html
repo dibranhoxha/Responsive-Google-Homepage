@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <script src="https://kit.fontawesome.com/10a4f8f358.js" crossorigin="anonymous"></script>
   <title>Google</title>
 </head>
+
 <body>
   <div id="nav">
     <div class="left-side">
@@ -41,10 +43,6 @@
               alt="">Send feedback</a>
         </div>
       </div>
-
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-      </svg>
       <a href="#" class="nav-link item all">all</a>
       <a href="#" class="nav-link item images">Images</a>
     </div>
@@ -56,87 +54,120 @@
     </div>
   </div>
   <div id="middle">
-    <div id="logo">
-      <img src="./images/google.png" alt="google image" id="google-logo" />
+    <div id="desktop-backward" class="logo-container">
+      <div id="logo">
+        <img src="./images/google.png" alt="google image" id="google-logo" />
+      </div>
     </div>
-    <div>
-      <form autocomplete="off" action="" id="search-form">
-        <div id="search-bar-container">
-          <div id="search-icon">
-            <img class="icons" id="search-img" src="https://www.trimandir.org/images/search-icon.png" alt="" />
+    <form autocomplete="off" action="" id="search-form">
+      <div id="search-bar-container">
+        <div id="search-icon">
+          <img class="icons" id="search-img" src="https://www.trimandir.org/images/search-icon.png" alt="" />
+        </div>
+        <div>
+          <input type="text" id="search-bar" />
+        </div>
+        <div id="mic-icon">
+          <img class="icons" id="mic-img" src="./images/mic.png" alt="" />
+        </div>
+      </div>
+      <div id="auto-complete-container">
+        <div class="top-container">
+          <div class="backward-container">
+            <svg id="iphone-backward" class="backward-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24">
+              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+            </svg>
           </div>
-          <div>
-            <input type="text" id="search-bar" />
-          </div>
-          <div id="mic-icon">
-            <img class="icons" id="mic-img" src="./images/mic.png" alt="" />
+          <div class="input-container">
+            <input type="text" class="iphone-search-input">
           </div>
         </div>
-        <div id="auto-complete-container">
-          <div class="top-container">
-            <div class="backward-container">
-              <svg class="backward-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg>
-            </div>
-            <div class="input-container">
-              <input type="text" class="iphone-search-input">
-            </div>
-          </div>
-          <div class="bottom-container">
-            <ul class="history-list">
-              <li class="history-list-item"><div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>responsive google clone</b></span><div class="remove">×</div><div class="remove-text">Remove</div></li>
-              <li class="history-list-item"><div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font awesome</b></span><div class="remove">×</div><div class="remove-text">Remove</div></li>
-              <li class="history-list-item"><div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font awesome</b></span><div class="remove">×</div><div class="remove-text">Remove</div></li>
-              <li class="history-list-item"><div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font awesome</b></span><div class="remove">×</div><div class="remove-text">Remove</div></li>
-              <li class="history-list-item"><div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font awesome</b></span><div class="remove">×</div><div class="remove-text">Remove</div></li>
-              <li class="history-list-item"><div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>responsive google clone</b></span><div class="remove">×</div><div class="remove-text">Remove</div></li>
+        <div class="bottom-container">
+          <ul class="history-list">
+            <li class="history-list-item">
+              <div class="list-icon"><i class="far fa-clock"></i></div><span
+                class="history-list-item-content"><b>responsive google clone</b></span>
+              <div class="remove">×</div>
+              <div class="remove-text">Remove</div>
+            </li>
+            <li class="history-list-item">
+              <div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font
+                  awesome</b></span>
+              <div class="remove">×</div>
+              <div class="remove-text">Remove</div>
+            </li>
+            <li class="history-list-item">
+              <div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font
+                  awesome</b></span>
+              <div class="remove">×</div>
+              <div class="remove-text">Remove</div>
+            </li>
+            <li class="history-list-item">
+              <div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font
+                  awesome</b></span>
+              <div class="remove">×</div>
+              <div class="remove-text">Remove</div>
+            </li>
+            <li class="history-list-item">
+              <div class="list-icon"><i class="far fa-clock"></i></div><span class="history-list-item-content"><b>font
+                  awesome</b></span>
+              <div class="remove">×</div>
+              <div class="remove-text">Remove</div>
+            </li>
+            <li class="history-list-item">
+              <div class="list-icon"><i class="far fa-clock"></i></div><span
+                class="history-list-item-content"><b>responsive google clone</b></span>
+              <div class="remove">×</div>
+              <div class="remove-text">Remove</div>
+            </li>
 
+          </ul>
+        </div>
+        <div id="submit-buttons">
+          <button class="button">Google Search</button>
+          <button class="button" id="animated-button-2">
+            <ul>
+              <li>I'm Feeling Lucky</li>
+              <li>I'm Feeling Stellar</li>
+              <li>I'm Feeling Artistic</li>
+              <li>I'm Feeling Wonderful</li>
+              <li>I'm Feeling Curious</li>
+              <li>I'm Feeling Hungry</li>
+              <li>I'm Feeling Doodley</li>
+              <li>I'm Feeling Generous</li>
+              <li>I'm Feeling Trendy</li>
+              <li>I'm Feeling Puzzled</li>
+              <li>I'm Feeling Playful</li>
             </ul>
-          </div>
-          <div id="submit-buttons">
-            <button class="button">Google Search</button>
-            <button class="button" id="animated-button-2">
-              <ul>
-                <li>I'm Feeling Lucky</li>
-                <li>I'm Feeling Stellar</li>
-                <li>I'm Feeling Artistic</li>
-                <li>I'm Feeling Wonderful</li>
-                <li>I'm Feeling Curious</li>
-                <li>I'm Feeling Hungry</li>
-                <li>I'm Feeling Doodley</li>
-                <li>I'm Feeling Generous</li>
-                <li>I'm Feeling Trendy</li>
-                <li>I'm Feeling Puzzled</li>
-                <li>I'm Feeling Playful</li>
-              </ul>
-            </button>
-          </div>
+          </button>
         </div>
-        <div id="under-auto-complete">
-          <div id="submit-buttons">
-            <button class="button">Google Search</button>
-            <button class="button" id="animated-button">
-              <ul>
-                <li>I'm Feeling Lucky</li>
-                <li>I'm Feeling Stellar</li>
-                <li>I'm Feeling Artistic</li>
-                <li>I'm Feeling Wonderful</li>
-                <li>I'm Feeling Curious</li>
-                <li>I'm Feeling Hungry</li>
-                <li>I'm Feeling Doodley</li>
-                <li>I'm Feeling Generous</li>
-                <li>I'm Feeling Trendy</li>
-                <li>I'm Feeling Puzzled</li>
-                <li>I'm Feeling Playful</li>
-              </ul>
-            </button>
-          </div>
-          <div id="lang-div">
-            Google offered in:
-            <a href="">Shqip</a>
-          </div>
+      </div>
+      <div id="action-container">
+        <div id="submit-buttons">
+          <button class="button">Google Search</button>
+          <button class="button" id="animated-button">
+            <ul>
+              <li>I'm Feeling Lucky</li>
+              <li>I'm Feeling Stellar</li>
+              <li>I'm Feeling Artistic</li>
+              <li>I'm Feeling Wonderful</li>
+              <li>I'm Feeling Curious</li>
+              <li>I'm Feeling Hungry</li>
+              <li>I'm Feeling Doodley</li>
+              <li>I'm Feeling Generous</li>
+              <li>I'm Feeling Trendy</li>
+              <li>I'm Feeling Puzzled</li>
+              <li>I'm Feeling Playful</li>
+            </ul>
+          </button>
         </div>
-      </form>
-    </div>
+        <div id="lang-div">
+          Google offered in:
+          <a href="">Shqip</a>
+        </div>
+      </div>
+    </form>
   </div>
   <footer id="footer">
     <ul class="end-list">
@@ -151,10 +182,10 @@
       <li><a href="">Settings</a></li>
     </ul>
     <ul class="unknown-list">
-        <li class="unknown">
-          <span class="dot"></span> <span class="bold-text">Unknown</span><span class="dash">-</span><a>Use
+      <li class="unknown">
+        <span class="dot"></span> <span class="bold-text">Unknown</span><span class="dash">-</span><a>Use
           precise location</a>
-        </li>
+      </li>
     </ul>
   </footer>
 </body>
