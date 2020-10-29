@@ -64,7 +64,7 @@ function randomSelection() {
         } else {
             randomSelection();
         }
-    }, 300)
+    }, 300);
 }
 
 // function randomSelection() {
