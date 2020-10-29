@@ -67,30 +67,6 @@ function randomSelection() {
     }, 300);
 }
 
-// function randomSelection() {
-//     let randomIndex = Math.floor(Math.random() * (animatedListItems.length - 1));
-//     console.log(animatedListItems[3].offsetTop)
-//     // let randomPixels = -(animatedListItems[randomIndex].offsetTop);
-//     setTimeout(() => {
-//         animatedList.style.transition = "margin-top 0.9s ease";
-//         // animatedList.style.marginTop = randomPixels + "px";
-//     }, 300);
-// }
-
-// function randomSelection() {
-//     // let elIndex = getRandomInt(1, (animatedListItems.length));
-
-//     let elementPixels = [-4, 49, 74, 101, 154, 180, 207, 233, 255]
-//     let randomIndex = Math.floor(Math.random() * (elementPixels.length - 1));
-//     let randomPixels = -elementPixels[randomIndex];
-
-//     setTimeout(() => {
-//         animatedList.style.transition = "margin-top 0.9s ease";
-//         animatedList.style.marginTop = randomPixels + "px";
-//     }, 300);
-// }
-
-
 function fixedSelection() {
     setTimeout(() => {
         animatedList.style.transition = "margin-top 0s ease";
