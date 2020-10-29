@@ -363,11 +363,16 @@ b {
 #animated-button li {
   list-style-type: none;
   width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  height: 26px;
 }
 
 #animated-button ul {
-  padding: 0;
-  margin-top: 4px;
+  padding: 4px 0 0 0;
+  margin-top: -130px;
 }
 
 #animated-button-2 {
@@ -381,7 +386,7 @@ b {
 
 #animated-button-2 ul {
   padding: 0;
-  margin-top: 4px;
+  /* margin-top: 4px; */
 }
 
 /* Media Queries */
