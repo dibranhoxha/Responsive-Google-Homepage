@@ -1,6 +1,6 @@
-let autoCompleteElement = document.getElementById("auto-complete-container");
+let autoCompleteElement = document.querySelector("div.auto-complete-container");
 let searchBar = document.getElementById("search-bar");
-let searchBarContainer = document.getElementById("search-bar-container");
+let searchBarContainer = document.querySelector("div.search-bar-container");
 let actionContainer = document.getElementById("action-container")
 let animatedButton = document.getElementById('animated-button');
 let animatedList = document.querySelector("#animated-button ul");
@@ -32,16 +32,16 @@ desktopBackward.addEventListener("click", () => {
 
 
 function appearAutoComplete() {
-    autoCompleteElement.id = "device-auto-complete";
-    searchBarContainer.id = "auto-complete-search-bar";
+    autoCompleteElement.classList.replace("auto-complete-container", "device-auto-complete");
+    searchBarContainer.classList.replace("search-bar-container", "auto-complete-search-bar");
     actionContainer.style.display = "none";
     desktopBackward.style.display = "block";
     iphoneInput.focus();
 }
 
 function dissapearAutoComplete() {
-    autoCompleteElement.id = "auto-complete-container";
-    searchBarContainer.id = "search-bar-container";
+    autoCompleteElement.classList.replace("device-auto-complete", "auto-complete-container");
+    searchBarContainer.classList.replace("auto-complete-search-bar", "search-bar-container");
     actionContainer.style.display = "block";
     desktopBackward.style.display = "none";
 }
