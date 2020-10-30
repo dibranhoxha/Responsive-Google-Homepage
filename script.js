@@ -15,7 +15,7 @@ animatedButton.addEventListener('mouseenter', () => {
 });
 
 animatedButton.addEventListener('mouseleave', () => {
-    fixedSelection();
+    fixedButtonText();
 });
 
 searchBar.addEventListener("click", () => {
@@ -68,7 +68,7 @@ function randomButtonTextRotation() {
 
 }
 
-function fixedSelection() {
+function fixedButtonText() {
     setTimeout(() => {
         animatedList.style.transition = "margin-top 0s ease";
         animatedList.style.marginTop = "-130px";
