@@ -57,14 +57,16 @@ function randomSelection() {
     } else {
         Pixels = number - (randomNumber * 26);
     }
-    setTimeout(() => {
-        if (Pixels !== number) {
+
+    if (Pixels !== number) {
+        setTimeout(() => {
             animatedList.style.transition = "margin-top 0.5s ease";
             animatedList.style.marginTop = Pixels + "px";
-        } else {
-            randomSelection();
-        }
-    }, 300);
+        }, 300);
+    } else {
+        randomSelection();
+    }
+
 }
 
 function fixedSelection() {
