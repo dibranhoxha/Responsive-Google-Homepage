@@ -11,7 +11,7 @@ let desktopBackward = document.getElementById("desktop-backward");
 
 
 animatedButton.addEventListener('mouseenter', () => {
-    randomSelection();
+    randomButtonTextRotation();
 });
 
 animatedButton.addEventListener('mouseleave', () => {
@@ -45,26 +45,25 @@ function dissapearAutoComplete() {
     actionContainer.style.display = "block";
     desktopBackward.style.display = "none";
 }
-function randomSelection() {
+function randomButtonTextRotation() {
     let randomNumber = Math.floor((Math.random() * (animatedListItems.length - 1) + 1) / 2);
     let randomCase = Math.random() >= 0.5;
     let ul = window.getComputedStyle(animatedList)
     let definedMargin = ul.getPropertyValue('margin-top');
     let number = parseInt(definedMargin.replace(/\D+$/g, ""));
-    let Pixels;
+    let elMarginTopPosition = number - (randomNumber * 26);
+
     if (randomCase) {
-        Pixels = number + (randomNumber * 26);
-    } else {
-        Pixels = number - (randomNumber * 26);
+        elMarginTopPosition = number + (randomNumber * 26);
     }
 
-    if (Pixels !== number) {
+    if (elMarginTopPosition !== number) {
         setTimeout(() => {
             animatedList.style.transition = "margin-top 0.5s ease";
-            animatedList.style.marginTop = Pixels + "px";
+            animatedList.style.marginTop = elMarginTopPosition + "px";
         }, 300);
     } else {
-        randomSelection();
+        randomButtonTextRotation();
     }
 
 }
